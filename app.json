@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/todo/todo",
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/weixin/weixin"
+  ],
+  "window":{
+    "backgroundTextStyle": "Light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "微信"
+  },
+  "tabBar":{
+   "borderStyle": "black",
+   "list":[
+     {
+      "pagePath": "pages/weixin/weixin",
+      "text": "微信",
+      "iconPath": "public/icon/08.png",
+      "selectedIconPath": "public/icon/07.png"
+    },
+     {
+     "pagePath":"pages/index/index",
+     "text":"index",
+     "iconPath":"public/icon/02.png",
+     "selectedIconPath":"public/icon/01.png"
+    },
+    {
+      "pagePath": "pages/home/home",
+      "text": "home",
+      "iconPath": "public/icon/04.png",
+      "selectedIconPath": "public/icon/03.png"
+    },
+    {
+     "pagePath":"pages/todo/todo",
+      "text": "todo",
+      "iconPath": "public/icon/06.png",
+      "selectedIconPath": "public/icon/05.png"
+    }
+   ]
+  }
+}

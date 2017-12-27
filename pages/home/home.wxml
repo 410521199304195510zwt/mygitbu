@@ -1,0 +1,31 @@
+<view class="cover">
+  <text class="title"> 热门电影 </text>
+
+   <view class="input-panel">
+    <input type='text' value="{{name}}" class="weui-input"  bindinput="bindKeyInput" ></input>
+    <input type='number'  value="{{age}}" class="weui-input" bindinput="bindKeyInputAge"></input>
+    <button bindtap='addhero'  class="weui-btn" type="primary"> 添加电影</button>
+  </view> 
+
+  <view class="list">
+
+  <!-- <view class="weui-cell"  wx:for="{{movies}}" wx:key="{{index}}">
+    <view class="weui-cell__hd">
+        <image src="{{item.cover}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">{{item.title}}</view>
+    <view class="weui-cell__ft">{{item.rate}}</view>
+  </view> -->
+  <!--  navigator 实现页面跳转 地址写在url属性上  -->
+    <!-- <navigator  wx:for="{{tfboys}}"  url="../detail/detail?name={{item.name}}&age={{item.age}}"> -->
+    <view class="list-item"  wx:for="{{movies}}" wx:key="{{index}}"> 
+      <view class="item-cover">
+        <image mode="aspectFit" src="{{item.cover}}"></image>  
+      </view>  
+      <view class="item-name">{{item.title}}</view>
+      <view class="item-age">{{item.rate}}</view>
+      <view class='item-delete'> <button data-index='{{index}}' bindtap='deletehero'  class="weui-btn mini-btn" type="warn" size="mini">删除</button></view>
+    </view>
+    <!-- </navigator> -->
+  </view>
+</view>

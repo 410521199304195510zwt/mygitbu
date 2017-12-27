@@ -1,0 +1,10 @@
+<view>
+
+<!-- <view>详情页</view> -->
+
+  <view>
+    <view>{{singer.name}}</view>
+    <view>{{singer.age}}</view>
+  </view>
+
+</view>

@@ -1,0 +1,15 @@
+<view>
+
+
+<view class="List">
+    <!-- navigator 实现页面跳转 地址写在url属性中 -->
+    <!-- <navigator wx:for="{{tfboys}}" url="../detail/detail?name={{item.name}} && age={{item.age}}"> -->
+      <view class="List-item"  wx:for="{{tfboys}}">  
+          <view class="item-type">{{item.title}}</view>
+          <view class="item-age">{{item.rata}}</view>  
+          <view><button data-index='{{index}}' bindtap='deletehero'>删除</button></view>
+      </view>
+    <!-- </navigator> -->
+
+  </view>
+</view>
